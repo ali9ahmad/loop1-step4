@@ -5,6 +5,7 @@
     --main-header-color: #6a96d8 ;
     --header-text-color: #fff;
     --message-textbg-color: #fff;
+    --first-textbg-color: #e6edf6;
     --third-textbg-color: #f2f2f2;
     --forth-textbg-color:#ffc2c1 ;
     --main-text-color: #000;
@@ -91,7 +92,6 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 12px; */
     padding-top: 12px;
     padding-right: 12px;
     padding-bottom: 12px;
@@ -122,9 +122,6 @@ a{
 .message__link path:hover {
     fill: var(--header-text-color);
 }
-
-/* .message__img {
-} */
 
 .message__text--area {
     padding: 15px;
@@ -178,11 +175,9 @@ a{
 }
 
 .message__mark1 {
-    box-sizing: border-box;
     display: inline-block;
     margin-top: 0;
     margin-bottom: 20px;
-    margin-right: 10px;
     padding-top: 10px;
     padding-right: 15px;
     padding-bottom: 10px;
@@ -190,7 +185,7 @@ a{
     width: 100%;
     max-width: 230px;
     font-size: 12px;
-    background-color: #e6edf6;
+    background-color: var(--first-textbg-color);
     border-radius: 3px;
 }
 
@@ -200,7 +195,7 @@ a{
     left: -8px;
     width: 8px;
     height: 8px;
-    border: 8px solid #e6edf6;
+    border: 8px solid var(--first-textbg-color);
     border-right-color: transparent;
     border-bottom-color: transparent;
     border-left-color: transparent;
@@ -224,11 +219,9 @@ a{
 .message__designer {
     position: absolute;
     right: 0;
-    box-sizing: border-box;
     display: inline-block;
     margin-top: 0;
     padding-top: 10px;
-    /* padding-right: 5px; */
     padding-bottom: 10px;
     padding-left: 10px;
     width: 100%;
@@ -257,18 +250,16 @@ a{
 }
 
 .message__mark2 {
-    box-sizing: border-box;
     display: inline-block;
     margin-top: 0;
-    margin-bottom: 10px;
-    margin-right: 10px;
+    margin-bottom: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
     width: 100%;
     max-width: 80px;
     font-size: 12px;
-    background-color: #e6edf6;
+    background-color: var(--first-textbg-color);
     border-radius: 3px;
 }
 
@@ -278,11 +269,13 @@ a{
     left: -8px;
     width: 8px;
     height: 8px;
-    border: 8px solid #e6edf6;
+    border: 8px solid var(--first-textbg-color);
     border-right-color: transparent;
     border-bottom-color: transparent;
     border-left-color: transparent;
 }
+
+/* •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */
 
 .wrapper__end2 {
     position: relative;
@@ -292,14 +285,13 @@ a{
 .message__designer2 {
     position: absolute;
     right: 0;
-    box-sizing: border-box;
     display: inline-block;
     margin-top: 0;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
     width: 100%;
-    max-width: 230px;
+    max-width: 183px;
     font-size: 12px;
     background-color: var(--forth-textbg-color);
     border-radius: 3px;
@@ -318,7 +310,6 @@ a{
 }
 
 .send__text {
-    font-family: Roboto;
     font-size: 14px;
     outline: none;
     border: none;
@@ -327,7 +318,7 @@ a{
 
 .send__text::placeholder {
     padding: 0;
-    font-family: Roboto;
+    /* font-family: Roboto; */
     font-size: 14px;
     font-weight: 500;
     color: var(--second-text-color);
@@ -342,7 +333,6 @@ a{
     border: none;
     background-color: transparent;
     color: var(--main-header-color);    
-    /* align-self: flex-end; */
 }
 
 /************** MAINS STYLES END **************/
